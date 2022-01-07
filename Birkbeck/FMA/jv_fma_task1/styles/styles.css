@@ -1,0 +1,57 @@
+body {
+	font-family: Verdana;
+	font-size: 1rem;	
+}
+
+#wrappermain {
+	margin: 0 auto;
+	max-width: 60%;
+}
+
+p {
+	line-height: 1.5;
+}
+
+article {
+	padding-bottom: 1rem;
+}
+
+h1 {
+	font-size: 2rem;
+	color: #85929E;
+}
+
+h2 {
+	font-size: 1.5rem;
+	color: #5D6D7E;
+}
+
+h3 {
+	font-size: 1.25rem;
+	color: #34495E;
+}
+
+h4 {
+	font-size: 1rem;
+	color: #212F3C;
+}
+
+ul {
+	list-style-type: none;
+	font-size: 0.95rem;
+	line-height: 1.5;
+	margin-left: -4%;
+	font-style: italic;
+}
+
+li {
+	margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+

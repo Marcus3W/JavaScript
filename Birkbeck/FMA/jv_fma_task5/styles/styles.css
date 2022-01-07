@@ -1,0 +1,24 @@
+.container {
+	padding: 250px;
+	position: relative;
+	background-color: white;
+}
+
+.boxLeft{
+	height: 100px;
+	width: 100px;
+	background-color: white;
+	position: absolute;
+	left: 10px;
+	border: 1px solid black;
+}
+
+.boxRight{
+	height: 100px;
+	width: 100px;
+	background-color: white;
+	position: absolute;
+	right: 10px;
+	border: 1px solid black;.
+}
+
