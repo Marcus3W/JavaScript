@@ -212,7 +212,7 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -2;
+  z-index: -2; /* HIDE THIS TO HIDE HEADING TEXT */
 }
 h1 {
   color: var(--clr-white);
@@ -251,11 +251,14 @@ h1 {
   display: block;
   transition: var(--transition);
 }
+
+/* USE JS TO APPLY .SLIDE CLASS */
 .slide .switch {
   left: 50%;
 }
-/* header after */
-/* header::after {
+/* header after - THIS ADDS A DARK OVERLAY */
+
+header::after {
   content: "";
   position: absolute;
   top: 0;
@@ -264,4 +267,4 @@ h1 {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: -1;
-} */
+}
