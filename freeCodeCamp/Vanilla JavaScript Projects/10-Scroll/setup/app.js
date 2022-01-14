@@ -11,6 +11,8 @@ const navToggle = document.querySelector('.nav-toggle');
 const linksContainer = document.querySelector('.links-container');
 const links = document.querySelector('.links');
 
+// this makes the toggle list dynamic.
+// it will change the size depending on the number of 'links'
 navToggle.addEventListener('click', function(){
     //linksContainer.classList.toggle('show-links');
     const containerHeight = linksContainer.getBoundingClientRect().height;
@@ -22,8 +24,37 @@ navToggle.addEventListener('click', function(){
     }
 });
 
+// CHANGE THE SCROLL
 // ********** fixed navbar ************
+const navbar = document.getElementById('nav');
+const topLink = document.querySelector('.top-link');
+window.addEventListener('scroll', function() {
+   const scrollHeight = window.pageYOffset;
+   const navHeight = navbar.getBoundingClientRect().height;
+
+   if(scrollHeight > navHeight) {
+       navbar.classList.add('fixed-nav');
+   }
+    else {
+        navbar.classList.remove('fixed-nav')
+    }
+
+    if(scrollHeight > 500) {
+        topLink.classList.add('show-link');
+    } else {
+        topLink.classList.remove('show-links')
+    }
+});
 
 // ********** smooth scroll ************
 // select links
+const scrollLinks = document.querySelectorAll('.scroll-link');
+scrollLinks.forEach(function(link) {
+    link.addEventListener('click', function () {
+        // PREVENT DEFAULT
+        e.preventDefault();
+        //navigate to specific spot
+        const id = e.currentTarget.getAttribute('href');
 
+    });
+});
